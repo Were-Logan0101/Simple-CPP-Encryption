@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.24)
 project(encryptApp)
 set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_C_COMPILER "gcc.exe")
-set(CMAKE_CXX_COMPILER "g++.exe")
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
 include_directories(crypto)
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -static-libgcc -static-libstdc++")
 add_executable(encrypt
